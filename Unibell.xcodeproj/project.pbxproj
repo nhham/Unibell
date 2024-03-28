@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1776AF8D2BB5C8EF0057A8DB /* UnibellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776AF8C2BB5C8EF0057A8DB /* UnibellApp.swift */; };
+		1776AF8F2BB5C8EF0057A8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776AF8E2BB5C8EF0057A8DB /* ContentView.swift */; };
+		1776AF912BB5C8F30057A8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1776AF902BB5C8F30057A8DB /* Assets.xcassets */; };
+		1776AF942BB5C8F30057A8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1776AF932BB5C8F30057A8DB /* Preview Assets.xcassets */; };
+		1776AF9E2BB5C8F40057A8DB /* UnibellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776AF9D2BB5C8F40057A8DB /* UnibellTests.swift */; };
+		1776AFA82BB5C8F40057A8DB /* UnibellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776AFA72BB5C8F40057A8DB /* UnibellUITests.swift */; };
+		1776AFAA2BB5C8F40057A8DB /* UnibellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776AFA92BB5C8F40057A8DB /* UnibellUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1776AF9A2BB5C8F40057A8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1776AF812BB5C8EF0057A8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1776AF882BB5C8EF0057A8DB;
+			remoteInfo = Unibell;
+		};
+		1776AFA42BB5C8F40057A8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1776AF812BB5C8EF0057A8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1776AF882BB5C8EF0057A8DB;
+			remoteInfo = Unibell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1776AF892BB5C8EF0057A8DB /* Unibell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unibell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1776AF8C2BB5C8EF0057A8DB /* UnibellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnibellApp.swift; sourceTree = "<group>"; };
+		1776AF8E2BB5C8EF0057A8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1776AF902BB5C8F30057A8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1776AF932BB5C8F30057A8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1776AF992BB5C8F40057A8DB /* UnibellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnibellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1776AF9D2BB5C8F40057A8DB /* UnibellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnibellTests.swift; sourceTree = "<group>"; };
+		1776AFA32BB5C8F40057A8DB /* UnibellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnibellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1776AFA72BB5C8F40057A8DB /* UnibellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnibellUITests.swift; sourceTree = "<group>"; };
+		1776AFA92BB5C8F40057A8DB /* UnibellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnibellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1776AF862BB5C8EF0057A8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AF962BB5C8F40057A8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AFA02BB5C8F40057A8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1776AF802BB5C8EF0057A8DB = {
+			isa = PBXGroup;
+			children = (
+				1776AF8B2BB5C8EF0057A8DB /* Unibell */,
+				1776AF9C2BB5C8F40057A8DB /* UnibellTests */,
+				1776AFA62BB5C8F40057A8DB /* UnibellUITests */,
+				1776AF8A2BB5C8EF0057A8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1776AF8A2BB5C8EF0057A8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1776AF892BB5C8EF0057A8DB /* Unibell.app */,
+				1776AF992BB5C8F40057A8DB /* UnibellTests.xctest */,
+				1776AFA32BB5C8F40057A8DB /* UnibellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1776AF8B2BB5C8EF0057A8DB /* Unibell */ = {
+			isa = PBXGroup;
+			children = (
+				1776AF8C2BB5C8EF0057A8DB /* UnibellApp.swift */,
+				1776AF8E2BB5C8EF0057A8DB /* ContentView.swift */,
+				1776AF902BB5C8F30057A8DB /* Assets.xcassets */,
+				1776AF922BB5C8F30057A8DB /* Preview Content */,
+			);
+			path = Unibell;
+			sourceTree = "<group>";
+		};
+		1776AF922BB5C8F30057A8DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1776AF932BB5C8F30057A8DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1776AF9C2BB5C8F40057A8DB /* UnibellTests */ = {
+			isa = PBXGroup;
+			children = (
+				1776AF9D2BB5C8F40057A8DB /* UnibellTests.swift */,
+			);
+			path = UnibellTests;
+			sourceTree = "<group>";
+		};
+		1776AFA62BB5C8F40057A8DB /* UnibellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1776AFA72BB5C8F40057A8DB /* UnibellUITests.swift */,
+				1776AFA92BB5C8F40057A8DB /* UnibellUITestsLaunchTests.swift */,
+			);
+			path = UnibellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1776AF882BB5C8EF0057A8DB /* Unibell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1776AFAD2BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "Unibell" */;
+			buildPhases = (
+				1776AF852BB5C8EF0057A8DB /* Sources */,
+				1776AF862BB5C8EF0057A8DB /* Frameworks */,
+				1776AF872BB5C8EF0057A8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unibell;
+			productName = Unibell;
+			productReference = 1776AF892BB5C8EF0057A8DB /* Unibell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1776AF982BB5C8F40057A8DB /* UnibellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1776AFB02BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "UnibellTests" */;
+			buildPhases = (
+				1776AF952BB5C8F40057A8DB /* Sources */,
+				1776AF962BB5C8F40057A8DB /* Frameworks */,
+				1776AF972BB5C8F40057A8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1776AF9B2BB5C8F40057A8DB /* PBXTargetDependency */,
+			);
+			name = UnibellTests;
+			productName = UnibellTests;
+			productReference = 1776AF992BB5C8F40057A8DB /* UnibellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1776AFA22BB5C8F40057A8DB /* UnibellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1776AFB32BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "UnibellUITests" */;
+			buildPhases = (
+				1776AF9F2BB5C8F40057A8DB /* Sources */,
+				1776AFA02BB5C8F40057A8DB /* Frameworks */,
+				1776AFA12BB5C8F40057A8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1776AFA52BB5C8F40057A8DB /* PBXTargetDependency */,
+			);
+			name = UnibellUITests;
+			productName = UnibellUITests;
+			productReference = 1776AFA32BB5C8F40057A8DB /* UnibellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1776AF812BB5C8EF0057A8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1776AF882BB5C8EF0057A8DB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					1776AF982BB5C8F40057A8DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 1776AF882BB5C8EF0057A8DB;
+					};
+					1776AFA22BB5C8F40057A8DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 1776AF882BB5C8EF0057A8DB;
+					};
+				};
+			};
+			buildConfigurationList = 1776AF842BB5C8EF0057A8DB /* Build configuration list for PBXProject "Unibell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1776AF802BB5C8EF0057A8DB;
+			productRefGroup = 1776AF8A2BB5C8EF0057A8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1776AF882BB5C8EF0057A8DB /* Unibell */,
+				1776AF982BB5C8F40057A8DB /* UnibellTests */,
+				1776AFA22BB5C8F40057A8DB /* UnibellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1776AF872BB5C8EF0057A8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1776AF942BB5C8F30057A8DB /* Preview Assets.xcassets in Resources */,
+				1776AF912BB5C8F30057A8DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AF972BB5C8F40057A8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AFA12BB5C8F40057A8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1776AF852BB5C8EF0057A8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1776AF8F2BB5C8EF0057A8DB /* ContentView.swift in Sources */,
+				1776AF8D2BB5C8EF0057A8DB /* UnibellApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AF952BB5C8F40057A8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1776AF9E2BB5C8F40057A8DB /* UnibellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1776AF9F2BB5C8F40057A8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1776AFAA2BB5C8F40057A8DB /* UnibellUITestsLaunchTests.swift in Sources */,
+				1776AFA82BB5C8F40057A8DB /* UnibellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1776AF9B2BB5C8F40057A8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1776AF882BB5C8EF0057A8DB /* Unibell */;
+			targetProxy = 1776AF9A2BB5C8F40057A8DB /* PBXContainerItemProxy */;
+		};
+		1776AFA52BB5C8F40057A8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1776AF882BB5C8EF0057A8DB /* Unibell */;
+			targetProxy = 1776AFA42BB5C8F40057A8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1776AFAB2BB5C8F40057A8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1776AFAC2BB5C8F40057A8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1776AFAE2BB5C8F40057A8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unibell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.Unibell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1776AFAF2BB5C8F40057A8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unibell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.Unibell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1776AFB12BB5C8F40057A8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.UnibellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unibell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Unibell";
+			};
+			name = Debug;
+		};
+		1776AFB22BB5C8F40057A8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.UnibellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unibell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Unibell";
+			};
+			name = Release;
+		};
+		1776AFB42BB5C8F40057A8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.UnibellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unibell;
+			};
+			name = Debug;
+		};
+		1776AFB52BB5C8F40057A8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanielham.UnibellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unibell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1776AF842BB5C8EF0057A8DB /* Build configuration list for PBXProject "Unibell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1776AFAB2BB5C8F40057A8DB /* Debug */,
+				1776AFAC2BB5C8F40057A8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1776AFAD2BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "Unibell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1776AFAE2BB5C8F40057A8DB /* Debug */,
+				1776AFAF2BB5C8F40057A8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1776AFB02BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "UnibellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1776AFB12BB5C8F40057A8DB /* Debug */,
+				1776AFB22BB5C8F40057A8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1776AFB32BB5C8F40057A8DB /* Build configuration list for PBXNativeTarget "UnibellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1776AFB42BB5C8F40057A8DB /* Debug */,
+				1776AFB52BB5C8F40057A8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1776AF812BB5C8EF0057A8DB /* Project object */;
+}

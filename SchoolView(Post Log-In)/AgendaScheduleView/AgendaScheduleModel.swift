@@ -11,6 +11,8 @@ import FirebaseAuth
 import FirebaseFirestore
 import SwiftUI
 
+
+
 /// ViewModel for single to do list itme view (each row in items list)
 /// Primary tab
 class AgendaScheduleViewViewModel: ObservableObject {
@@ -56,11 +58,12 @@ class AgendaScheduleViewModel: ObservableObject {
     
 }
 
-class newItemViewModel: ObservableObject {
+class NewItemViewModel: ObservableObject {
     @Published var title = ""
     @Published var dueDate = Date()
     @Published var showAlert: Bool = false
-    @Published var Color: Color = .mint
+    @Published var Color: Color = .white
+    
     init() {}
     
     func save() {

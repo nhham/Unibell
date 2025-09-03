@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct LoadingView: View {
+    @Binding var show: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            if show{
+                ProgressView()
+                    .padding(15)
+                    .background(.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                
+            }
+        }
+        .vAlign(.center)
+        .hAlign(.center)
+        .animation(.easeInOut(duration: 0.25), value: show)
     }
-}
-
-#Preview {
-    LoadingView()
 }

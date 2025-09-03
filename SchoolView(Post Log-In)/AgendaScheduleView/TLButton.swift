@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+import UIKit
 struct TLButton: View {
     let title: String
     let background: Color
@@ -32,5 +33,40 @@ struct TLButton_Previews: PreviewProvider{
         TLButton(title: "Value", background: .lavender) {
             
         }
+    }
+}
+
+import SwiftUI
+import UIKit
+
+struct AlwaysVisibleScrollView<Content: View>: UIViewRepresentable {
+    let content: Content
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    func makeUIView(context: Context) -> UIScrollView {
+        let scrollView = UIScrollView()
+        scrollView.backgroundColor = .white
+        scrollView.alwaysBounceVertical = true
+        scrollView.showsVerticalScrollIndicator = true
+        scrollView.showsHorizontalScrollIndicator = true
+        scrollView.indicatorStyle = .black
+        scrollView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10) // Adjust for better visibility
+        return scrollView
+    }
+
+    func updateUIView(_ uiView: UIScrollView, context: Context) {
+        let hostingController = UIHostingController(rootView: content)
+        hostingController.view.frame = CGRect(x: 0, y: 0, width: uiView.bounds.width, height: uiView.bounds.height)
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+        if let oldView = uiView.subviews.first {
+            oldView.removeFromSuperview()
+        }
+
+        uiView.addSubview(hostingController.view)
+        uiView.contentSize = hostingController.view.intrinsicContentSize
     }
 }

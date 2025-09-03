@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct CustomNavBarView: View {
+struct CustomNavBarItem: View {
+    let image: Image
+    let action: ()-> Void
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action, label: {
+            image
+                .frame(maxWidth: .infinity)
+        })
     }
-}
-
-#Preview {
-    CustomNavBarView()
 }

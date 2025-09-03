@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class BoolViewModel: ObservableObject {
+    @Published var showMessage = false
+    @Published var showTasks = false
+    
+    init() {}
+    
+}

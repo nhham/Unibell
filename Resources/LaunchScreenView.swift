@@ -9,7 +9,15 @@ import SwiftUI
 
 struct LaunchScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("IMG_1551 2")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .scaledToFit()
+            Text("Unibell.")
+                .font(.custom("Koldby", size: 26))
+
+        }
     }
 }
 

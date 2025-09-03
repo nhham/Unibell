@@ -12,13 +12,23 @@ import FirebaseFirestore
 import SwiftUI
 import FirebaseStorage
 
+
 struct NewAgendaItemView: View {
-    @StateObject var newItemModel = newItemViewModel()
+    @Environment(\.xLargeFontSize) var xLargeFontSize
+    @Environment(\.largeFontSize) var largeFontSize
+    @Environment(\.mediumFontSize) var mediumFontSize
+    @Environment(\.smallFontSize) var smallFontSize
+    @Environment(\.xSmallFontSize) var xSmallFontSize
+    @Environment(\.xLargePaddingSize) var xLargePaddingSize
+    @Environment(\.largePaddingSize) var largePaddingSize
+    @Environment(\.mediumPaddingSize) var mediumPaddingSize
+    @Environment(\.smallPaddingSize) var smallPaddingSize
+    @Environment(\.xSmallPaddingSize) var xSmallPaddingSize
+    @StateObject var newItemModel = NewItemViewModel()
     @StateObject var agendaModel = AgendaScheduleViewModel()
-    @State private var createNewItem: Bool = false
     @Environment(\.dismiss) private var dismiss
     @Binding var newItemPresented: Bool
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 15, content: {
             Button(action: {
@@ -28,7 +38,9 @@ struct NewAgendaItemView: View {
                     .font(.title)
                     .tint(.red)
             })
+            .padding(.top)
             .hSpacing(.leading)
+            
             VStack(alignment: .leading, spacing: 8, content: {
                 Text("Task Title")
                     .font(.caption)
@@ -37,11 +49,11 @@ struct NewAgendaItemView: View {
                 TextField("Complete 3 MathXL Assignments!", text: $newItemModel.title)
                     .padding(.vertical, 12)
                     .padding(.horizontal, 15)
-                    .background(.white.shadow(.drop(color: .black.opacity(0.25), radius: 2)), in: .rect(cornerRadius: 10))
+                    .background(Color.white.shadow(.drop(color: .black.opacity(0.25), radius: 2)), in: RoundedRectangle(cornerRadius: 10))
             })
-            .padding(.top, 5)
+            .padding(.top)
             
-            HStack(spacing: 12) {
+            HStack(spacing: 10) {
                 VStack(alignment: .leading, spacing: 8, content: {
                     Text("Task Date")
                         .font(.caption)
@@ -50,30 +62,25 @@ struct NewAgendaItemView: View {
                     DatePicker("", selection: $newItemModel.dueDate)
                         .datePickerStyle(.compact)
                         .scaleEffect(0.9, anchor: .leading)
+                        .labelsHidden()
                 })
-                .padding(.trailing, -15)
                 
                 VStack(alignment: .leading, spacing: 8, content: {
                     Text("Task Color")
                         .font(.caption)
                         .foregroundStyle(.gray)
                     
-                    ColorPicker("", selection: $newItemModel.Color, supportsOpacity: false)
-                        .padding(.horizontal, 50)
-                        .padding(.vertical, 3)
-                        .background(.white.shadow(.drop(color: .black.opacity(0.25), radius: 10)), in: .rect(cornerRadius: 10))
-                        .font(.system(size: 15))
-                        .hSpacing(.trailing)
+                    ColorPicker("", selection: $newItemModel.Color)
+                        .background(Color.white.shadow(.drop(color: .black.opacity(0.25), radius: 10)), in: RoundedRectangle(cornerRadius: 20))
+                        .labelsHidden()
                 })
-              
             }
-            .padding(.top, 5)
             Spacer(minLength: 0)
             Button(action: {
                 if newItemModel.canSave {
                     newItemModel.save()
                     dismiss()
-                }else {
+                } else {
                     newItemModel.showAlert = true
                 }
             }, label: {
@@ -83,24 +90,22 @@ struct NewAgendaItemView: View {
                     .textScale(.secondary)
                     .foregroundStyle(.black)
                     .hSpacing(.center)
-                    .padding(.vertical, 12)
-                    .background(.blue.opacity(0.25), in: .rect(cornerRadius: 10))
-                
+                    .padding(.vertical)
+                    .background(Color.blue.opacity(0.25), in: RoundedRectangle(cornerRadius: 10))
             })
-            
         })
-        .padding(15)
+        .padding()
+        .alert(isPresented: $newItemModel.showAlert) {
+            Alert(title: Text("Error"), message: Text("Please fill out all fields correctly."), dismissButton: .default(Text("OK")))
+        }
     }
-
 }
 
 
 
 struct NewAgendaItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewAgendaItemView(newItemPresented: Binding(get: {
-            return true
-        }, set: { _ in
-        }))
+        NewAgendaItemView(newItemPresented: .constant(true))
     }
 }
+
